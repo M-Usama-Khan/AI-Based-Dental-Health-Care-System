@@ -1,5 +1,33 @@
+# Virtual environments
 backend/venv/
+.venv/
+
+# Environment variables
 backend/.env
+frontend/.env
+frontend/.env.local
+.env
+
+# Dependencies
 frontend/node_modules/
-*.pth
+
+# Python
 __pycache__/
+*.pyc
+*.pyo
+
+# ML Models
+*.pth
+*.pt
+*.h5
+
+# Kaggle credentials (SENSITIVE!)
+kaggle.json
+
+# Build output
+frontend/dist/
+frontend/build/
+
+# OS files
+.DS_Store
+Thumbs.db
