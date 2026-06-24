@@ -26,3 +26,11 @@ body {
   background: rgba(13,148,136,0.3);
   color: #fff;
 }
+select option {
+    background-color: #0F1929 !important;
+    color: #E2E8F0 !important;
+}
+
+select {
+    color-scheme: dark;
+}

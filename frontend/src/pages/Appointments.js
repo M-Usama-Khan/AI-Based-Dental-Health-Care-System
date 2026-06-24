@@ -38,7 +38,15 @@ const dark = {
     trow:       { display: 'grid', gridTemplateColumns: '2fr 1.5fr 1fr 2fr 1fr', padding: '14px 20px', borderTop: '1px solid rgba(255,255,255,0.05)', alignItems: 'center' },
     overlay:    { position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.7)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 999, backdropFilter: 'blur(4px)' },
     modal:      { background: '#0F1928', border: '1px solid rgba(13,148,136,0.2)', borderRadius: 16, padding: 32, width: 420, boxShadow: '0 40px 80px rgba(0,0,0,0.5)' },
-    input:      { width: '100%', padding: 12, border: '1px solid rgba(255,255,255,0.08)', borderRadius: 8, fontSize: 14, marginBottom: 12, boxSizing: 'border-box', background: 'rgba(255,255,255,0.04)', color: '#E2E8F0' },
+   input: { 
+    width: '100%', padding: 12, 
+    border: '1px solid rgba(255,255,255,0.08)', 
+    borderRadius: 8, fontSize: 14, marginBottom: 12, 
+    boxSizing: 'border-box', 
+    background: 'rgba(255,255,255,0.04)', 
+    color: '#E2E8F0',
+    colorScheme: 'dark',  // ← YE ADD KARO
+},
 };
 
 export default function Appointments() {
@@ -64,7 +72,7 @@ export default function Appointments() {
             <AnimatedBG />
             <div style={{ position: 'relative', zIndex: 2 }}>
                 <Navbar />
-                <div style={{ padding: '32px 40px' }}>
+               <div style={{ padding: '96px 40px 40px' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 24 }}>
                         <h2 style={{ color: '#fff', fontSize: 24, fontWeight: 700 }}>📅 Appointments</h2>
                         <button onClick={() => setModal(true)} style={dark.btn}>+ Book Appointment</button>
